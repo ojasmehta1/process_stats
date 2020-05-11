@@ -1,0 +1,34 @@
+Ojass-MacBook-Air:Hw7 OjasMehta$ make
+gcc -ansi -Wall -o a7 hw7.c
+Ojass-MacBook-Air:Hw7 OjasMehta$ ./a7
+
+This is the Parent process report:
+
+PARENT PROG:  Process ID is:		66531
+PARENT PROC:  Process parent ID is:	66242
+PARENT PROC:  Real UID is:		501
+PARENT PROC:  Real GID is:		20
+PARENT PROC:  Effective UID is:		501
+PARENT PROC:  Effective GID is:		20
+PARENT PROC:  Process priority is:	0
+
+PARENT PROC: will now create child, write pipe,
+ and do a normal termination
+
+PARENT PROG: Created child with 66532 PID
+
+This is the Child process report:
+
+CHILD PROG:  Process ID is:		66532
+CHILD PROC:  Process parent ID is:	66531
+CHILD PROC:  Real UID is:		501
+CHILD PROC:  Real GID is:		20
+CHILD PROC:  Effective UID is:		501
+CHILD PROC:  Effective GID is:		20
+CHILD PROC:  Process priority is:	0
+
+CHILD PROG: about to read pipe and report parent message:
+
+CHILD PROC: parent's msg is: Message from the parent with PID 66531
+CHILD PROC: Process parent ID now is: 1
+CHILD PROC: ### Goodbye ###
